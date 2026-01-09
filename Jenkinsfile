@@ -10,7 +10,7 @@ pipeline {
         stage('Build & Test') {
             steps {
                 echo 'Building and testing application...'
-                sh './build.sh'
+                bat 'build.bat'
             }
         }
 
